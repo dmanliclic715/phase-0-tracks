@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>I Scream for Ice Cream!</title>
 </head>
 <body>
+<form name="Ice Cream" action="success.html" method="post">
+<fieldset>
+  <div>
+    <label>Full Name</label>
+    <input type="text" name="Full Name" size="15" maxlength="50"/>
+    <label>Password</label>
+    <input type="password" name="password" size ="15" maxlength="50"/>
+  </div>
+
+
+<div>
+  <label>Pick your favorite ice cream!</label>
+  <select name="Ice Cream Flavor">
+  <option value="Chocolate">Chocolate</option>
+  <option value="Vanilla">Vanilla</option>
+  <option value="Cookies n' Cream">Cookies n' Cream</option>
+  </select>
+</div>
+
+<div>
+  <p>
+<label>Do you have another flavor that you prefer?</label>
+  </p>
+<textarea name="other flavor">Enter other flavor...</textarea>
+</div>
+<label>Favorite Topping:</label>
+<input type="radio" name="topping" value="sprinkles" checked="checked" /> Sprinkles
+<input type="radio" name="topping" value="fudge" checked="checked" /> Fudge
+</fieldset>
+<button type="submit">Submit</button>
+</form>
+
+
+
 
 </body>
 </html>
+<!-- Paired with David Lin -->
