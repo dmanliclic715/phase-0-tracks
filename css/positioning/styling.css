@@ -1,0 +1,10 @@
+.cowboy-octopus {postion: relative;}
+#hat {position: absolute;
+      top: 80px;
+      left:90px;}
+#glasses {position: absolute;
+      top: 250px;
+      left: 150px;
+      z-index: 2;}
+#octopus {margin-top: 150px;
+          margin-left: 100px;}
