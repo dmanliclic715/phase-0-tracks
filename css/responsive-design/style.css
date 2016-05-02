@@ -1,3 +1,20 @@
+#wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#external-links {
+  width: 25%
+}
+main {
+  width: 70%;
+  min-width: 2%;
+  padding: 2%;
+}
+#external-links, main {
+display: inline-block;
+vertical-align: text-top;
+}
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -15,7 +32,7 @@ cite {
 }
 
 /* you're welcome to edit the
-image, figure, and figcaption CSS if you'd like, 
+image, figure, and figcaption CSS if you'd like,
 but it's optional! */
 img {
   width: 100%;
@@ -30,3 +47,13 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+@media screen and (max-width: 500px) {
+  body {
+    font-size: .5em;
+    max-width: 100%;
+  }
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
