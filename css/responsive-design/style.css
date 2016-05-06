@@ -2,7 +2,6 @@
   width: 900px;
   margin: 0 auto;
 }
-
 #external-links {
   width: 25%
 }
@@ -49,8 +48,9 @@ figcaption {
 }
 @media screen and (max-width: 500px) {
   body {
-    font-size: .5em;
+    font-size: .8em;
     max-width: 100%;
+    position: relative;
   }
 /*@media screen and (max-width: 500px) {
   body {
