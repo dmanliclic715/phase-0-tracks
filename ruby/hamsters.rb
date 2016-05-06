@@ -20,3 +20,4 @@ if candidate == true
   puts "Your hamster #{name} has a volume of #{volume}/10, its color is #{color}, its age is #{age} and it is a GOOD candidate for adoption!"
   else puts "Your hamster #{name} has a volume of #{volume}/10, its color is #{color}, its age is #{age} and it is a BAD candidate for adoption!"
 end
+# Paired with Danielle Hassid
