@@ -11,3 +11,24 @@ Personal Robot Elevator Algorithm
 7. Wait on elevator until desired floor is reached.
 8. Wait for elevator doors to open.
 9. Exit elevator.
+
+Real-Life Algorithm
+Brushing Teeth
+1. Grab toothbrush
+2. Open water faucet
+3. Run toothbrush head under the water faucet for 5 seconds.
+4. Obtain the toothpaste
+5. Squeeze a nickel sized amount of toothpaste onto head of toothbrush
+6. Run toothbrush underwater for 3 seconds.
+7. Close faucet
+8 Place head of toothbrush into mouth.
+9. Brush surface of all teeth in a oscillating motion until surface of teeth has been brushed several times.
+10. Spit out residual toothpaste from the mouth into the sink.
+11. Open faucet
+12. Rinse entire toothbrush until residual toothpaste is gone.
+13. Return toothbrush to the stand.
+14. Cup water with hand and put it into mouth.
+15. Use water in mouth to rinse residual toothpaste from the mouth.
+16. Spit water into the sink.
+17. Close faucet.
+18. Smile in the mirror and enjoy clean teeth.
