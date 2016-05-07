@@ -1,3 +1,4 @@
+# Employee Intake Form
 puts "What is your name?"
 employee_name = gets.chomp
 puts "How old are you?"
@@ -28,13 +29,17 @@ until valid_insurance_pref
     puts "I didn't understand you."
   end
 end
-if (employee_age == employee_yob) && (garlic_pref=="y" || insurance_pref=="y")
+
+#Conditionals
+if (employee_age == employee_yob) && garlic_pref=="y" || insurance_pref=="y"
 puts "Probably not a vampire"
-elsif (employee_age != employee_yob) && (garlic_pref=="n" or insurance_pref=="n")
+#I'm having a lot of trouble distinguishing between lines 37-39. I feel like I'm missing something or I didn't express my variables accurately. Since the two conditionals are similar they return only the "Probably a vampire" string no matter what I do.
+elsif (employee_age != employee_yob) &&garlic_pref=="n" or insurance_pref=="n"
 puts "Probably a vampire"
 elsif (employee_age != employee_yob) &&garlic_pref == "n" && insurance_pref == "n"
- puts "Almost certainly a vampire"
-elsif  employee_name == "Drake Cula" || employee_name == "Tu Fang"
-  puts "Definitely a vampire"
+  puts "Almost certainly a vampire"
+  # I also can't get this piece of code to work either. I'll input these names but it'll still result with "Probably not a vampire" with the conditionals.
+elsif employee_name = "Drake Cula" || "Tu Fang"
+  puts "Definitely a Vampire"
 else puts "Results Inconclusive"
 end
