@@ -1,0 +1,13 @@
+Personal Robot Elevator Algorithm
+1. Approach Elevator Area
+2. Determine whether you’d like to navigate up or down on the elevator (if on ground or top floor ignore this step and select respective option button)
+	2.1 Select corresponding arrow (If on ground or top floor select “UP Arrow” button
+3. Await elevator ding
+4. Confirm Elevator with ding is navigating with your corresponding direction by looking at direction indicator light
+	4.1 If direction indicator corresponds with your desired direction enter the 		elevator. Otherwise, (see 4.2).
+	4.2 Disregard the elevator with a ding and wait for another elevator or for this 	elevator to return with appropriate direction. When completed proceed with step 	4.1.
+5. Once in elevator assess the floor buttons to choose desired floor
+6. Press desired floor button.
+7. Wait on elevator until desired floor is reached.
+8. Wait for elevator doors to open.
+9. Exit elevator.
