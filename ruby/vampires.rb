@@ -37,17 +37,32 @@ end
 
 #Conditionals
 if (employee_name =="Drake Cula" || employee_name =="Tu Fang") && (employee_age ==employee_yob) && garlic_pref == "y" && insurance_pref == "y"
-  puts "Definitely a Vampire"
+  puts "Result: Definitely a Vampire"
 elsif (employee_age ==employee_yob) && (garlic_pref =="y" && insurance_pref =="n") || (garlic_pref =="n" && insurance_pref =="y")
-  puts "Probably not a vampire"
+  puts "Result: Probably not a vampire"
 elsif (employee_yob !=employee_age) && (garlic_pref =="y" && insurance_pref=="n") || (garlic_pref =="n" && insurance_pref =="y")
   # for the "(garlic_pref =="n" && insurance_pref =="y")" conditional above I keep getting the result as "probably not a vampire" even though the employee_age and the employee_yob don't match. How is this possible?
-  puts "Probably a vampire"
+  puts "Result: Probably a vampire"
 elsif (employee_age !=employee_yob) && garlic_pref =="n" && insurance_pref =="n"
   puts "Almost certainly a vampire"
 else puts "Results Inconclusive"
 end
-#LOOP END#
+#END OF CONDITIONALS
+
+#ALLERGY LOOP
+employee_allergies = nil
+puts "Please list ALL your allergies one by one. Input the word 'done' when complete."
+until employee_allergies == "done"
+puts "List Allergy."
+employee_allergies = gets.chomp
+  if employee_allergies == "sunshine"
+    puts "Result: Probably a vampire"
+    break
+  end
+end
+#ALLERGY LOOP END
+
+#LOOP END
 valid_employee_num += 1
 end
 #LOOP END#
