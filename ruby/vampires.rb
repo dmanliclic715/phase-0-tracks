@@ -67,3 +67,6 @@ valid_employee_num += 1
 end
 #LOOP END#
 
+#Release 5 Plot Twist
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+
