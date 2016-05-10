@@ -4,17 +4,17 @@
   #Add one letter to each letter of the string
   #Ignore space characters and don't make changes to them.(I could only delete the space characters. But I could not leave the space characters there.)
 
-# def encrypt(x)
-#     index = 0
-#     while index < x.length
-#       x[index] = x[index].next!
-#       index += 1
-#     end
-#     if x == !
-#       x.delete!("!")
-#     end
-#   p x
-# end
+def encrypt(x)
+    index = 0
+    while index < x.length
+      x[index] = x[index].next!
+      index += 1
+    end
+    if x == !
+      x.delete!("!")
+    end
+  p x
+end
 
 # encrypt("ab  c")
 
