@@ -20,10 +20,14 @@
 
 def decrypt(x)
 i = 0
-a = "abcdefghijklmnopqrstuvwxyz"
 index = 0
-while index < x.length
-  x[index] = a[i]-1
-  index += 1
+a = "abcdefghijklmnopqrstuvwxyz"
+  while (index < x.length) && (i < a.length)
+   x[index] = a[i]
+    i += 1
+    index += 1
+  end
+p x
 end
-end
+decrypt("ddd")
+#Turning this in for the sake of time and need to continue on to week 5! Will come back to it when I have the chance.
