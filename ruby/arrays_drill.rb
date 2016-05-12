@@ -1,3 +1,4 @@
+# Paired with Andrew Jung
 chicago = []
 p chicago
 chicago = ["Bean", "deepdish pizza", "The L", "Sears Tower", "Wrigleyville"]
