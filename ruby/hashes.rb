@@ -43,5 +43,18 @@ client_application[:pref_decor] = pref_decor
 client_application[:color_allergy] = color_allergy
 p client_application
 
-
-
+#Data Confirmation
+puts "Does any of this information need to be edited?(yes or none)"
+application_edit = gets.chomp
+if application_edit == "yes"
+  puts "Which key?"
+  key_edit = gets.chomp.intern
+  puts "Input the change you would like in #{key_edit}."
+  new_value = gets.chomp
+  client_application[key_edit] = new_value
+  p client_application
+  puts "Thank you!"
+elsif application_edit == "none"
+    puts "Thank you!"
+    exit
+end
