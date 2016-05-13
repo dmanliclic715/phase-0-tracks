@@ -22,7 +22,7 @@ puts "What is your age?"
 client_age = gets.chomp.to_i
 puts "How many children do you have?"
 number_children = gets.chomp.to_i
-  if number_children = 0 && "none"
+  if number_children == 0
     number_children = nil
   end
 puts "What decor theme do you prefer?"
@@ -34,6 +34,14 @@ if color_allergy == "y"
 elsif color_allergy == "n"
   color_allergy = false
 end
+
+#Data Assignment
+client_application[:client_name] = client_name
+client_application[:client_age] = client_age
+client_application[:number_children] = number_children
+client_application[:pref_decor] = pref_decor
+client_application[:color_allergy] = color_allergy
+p client_application
 
 
 
