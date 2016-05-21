@@ -1,12 +1,20 @@
 class Santa
-  attr_reader :age, :ethnicity, :reindeer_ranking
-  attr_accessor :gender
-  def initialize(gender, ethnicity)
+  attr_reader  :ethnicity, :reindeer_ranking
+  attr_accessor :gender, :age
+  def initialize(gender, ethnicity, age)
     puts "Initializing Santa instance..."
     @gender = gender
     @ethnicity = ethnicity
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-    @age = 0
+    @age = age
+  end
+  def user_interface
+    puts "============================="
+    puts "***Santa Instance Attributes Below***"
+    puts "Gender: #{@gender}"
+    puts "Etnicity: #{@ethnicity}"
+    puts "Age: #{@age}"
+    puts "=============================="
   end
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
@@ -16,7 +24,7 @@ class Santa
   end
 
   def celebrate_birthday
-     puts "I am now #{@age + 1} years old"
+     @age + 1
   end
   def get_mad_at(reindeer_name)
     @reindeer_ranking << @reindeer_ranking.delete(reindeer_name)
@@ -67,5 +75,15 @@ end
 # p bob.celebrate_birthday
 # bob.get_mad_at("Donner")
 # bob.gender = "f"
+
+sample_gender = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+sample_ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+age = (0..140).to_a
+
+100000.times do
+  Santa.new(sample_gender.sample, sample_ethnicity.sample,age.sample).user_interface
+end
+
+
 
 
