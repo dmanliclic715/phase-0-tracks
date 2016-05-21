@@ -35,12 +35,11 @@ end
 # bob.cpr(10)
 
 #Release 2: Use Your Class in a Program
+medical_workers = []
 puts "***Welcome to the Medical Personnel Input Form***"
 puts "How many medical personnel are we inputting today?"
 number_of_instaces = gets.chomp.to_i
 puts "Please list each name, occupation, department, and age for the #{number_of_instaces} medical worker(s)."
-medical_workers = []
-
 number_of_instaces.times.each do
   puts "Name:"
   medical_worker_name = gets.chomp
