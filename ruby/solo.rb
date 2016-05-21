@@ -6,6 +6,7 @@
   # A resuscitate method in which an integer is inputted and that is how many times the  healtcare worker will pump during cpr
   # A method in which the healthcare worker gives the patients meds
 class Medical_Staff
+  attr_reader :occupation
   def initialize(occupation, department, age)
     puts "Initializing Medical Personnel..."
     @occupation = occupation
@@ -25,10 +26,16 @@ class Medical_Staff
   def administer_meds
     puts "**Gives patient medication**"
   end
-
-
-
 end
 
-bob = Medical_Staff.new("doctor", "ER", 40)
-bob.administer_meds
+# bob = Medical_Staff.new("doctor", "ER", 40)
+# bob.administer_meds
+# bob.save_life
+# bob.cpr(10)
+
+#Release 2: Use Your Class in a Program
+
+
+
+
+
