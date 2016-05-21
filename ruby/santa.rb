@@ -62,10 +62,10 @@ end
 # end
 # p santas
 
-bob = Santa.new("m","american")
-p bob
-p bob.celebrate_birthday
-bob.get_mad_at("Donner")
-bob.gender = "f"
+# bob = Santa.new("m","american")
+# p bob
+# p bob.celebrate_birthday
+# bob.get_mad_at("Donner")
+# bob.gender = "f"
 
 
