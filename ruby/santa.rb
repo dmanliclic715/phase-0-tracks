@@ -80,7 +80,7 @@ sample_gender = ["agender", "female", "bigender", "male", "female", "gender flui
 sample_ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 age = (0..140).to_a
 
-100000.times do
+10000.times do
   Santa.new(sample_gender.sample, sample_ethnicity.sample,age.sample).user_interface
 end
 
