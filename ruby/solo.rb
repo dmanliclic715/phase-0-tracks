@@ -52,7 +52,7 @@ number_of_instaces.times.each do
    medical_workers << Medical_Staff.new(medical_worker_name,medical_occupation,hospital_department,worker_age)
    puts "================================="
   end
-# can't get the code to iterate through this array and print specific attributes but I can still print out the entire array
+# can't get the code to iterate through this array and print SPECIFIC attributes but I can still print out the entire array
 medical_workers.each do |x|
   puts "These are the results of your input: #{medical_workers}"
 end
