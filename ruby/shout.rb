@@ -2,6 +2,10 @@
 module Shout
   def self.yell_angrily(words)
     words + "!!!" + " :("
-    end
+  end
+  def self.yelling_happily(words)
+    words + "!!!" + " :D"
+  end
 end
-
+p Shout.yelling_happily("HOW ARE YOU")
+p Shout.yell_angrily("What did you do?")
