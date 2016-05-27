@@ -83,5 +83,21 @@ alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density],
 alaska.virus_effects
 
 
+
+
+
+
+
+
 #=======================================================================
 # Reflection Section
+#What are the differeces between the two different hash syntaxes show in the state data file?
+  # There's a difference between the two hashes with how the values are added to the key. The big hash uses the rocket symbol to add the values. The nested hashes use the colon to add the values.
+# What does require relative do? How is it different from require?
+  #Require relative inputs files that have been made locally. Require inputs data that the ruby program can use.
+# What are some ways to iterate through a hash?
+  #.each key pair and value! You can use these particular methods to iterate through the components of the hash.
+#When refactoring virus_effects, what stood out to you about the variables, if anything?
+  #I'm not completely sure how to refactor. It's something I need to look into further.
+# What concept did you most solidify in this challenge?
+  #I think I solidified my understanding of instance variables. I also think I solidified iteration through hashes.
