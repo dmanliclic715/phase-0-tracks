@@ -26,3 +26,5 @@ var carOne = new Car(2001, 'Mitsubishi', false);
 var carTwo = new Car(1969, 'Chevrolet', true);
 carOne.honk();
 carTwo.honk();
+
+// Paired with Greg Huber
