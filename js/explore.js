@@ -12,3 +12,11 @@ function reverse(str) {
   console.log(newString)
 }
 reverse("Hello")
+
+if (1 == 1) {
+  console.log(reverse("Chocolate"));
+} else {
+  console.log ("This would never happen.");
+}
+// Why is underfined returned?
+
