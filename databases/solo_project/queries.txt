@@ -1,0 +1,50 @@
+1. SELECT * FROM departments;
+1|Emergency Department
+2|Intensive Critical Unit
+3|Pediatrics
+4|Surgery Department
+5|POST-OP Department
+
+2. UPDATE patient SET critical_condition="false" WHERE id=5;
+
+3. SELECT * FROM patient, departments WHERE patient.department_id = departments.id;
+1|Carl|5|96|false|3|3|Pediatrics
+2|Ben|13|98|false|3|3|Pediatrics
+3|George|7|98|false|3|3|Pediatrics
+4|Hubert|4|97|false|3|3|Pediatrics
+5|Chris|43|99|false|2|2|Intensive Critical Unit
+6|Leon|64|101|true|2|2|Intensive Critical Unit
+7|Benny|49|96|true|2|2|Intensive Critical Unit
+8|Brandon|24|96|false|1|1|Emergency Department
+9|Michael|33|98|true|1|1|Emergency Department
+10|Mac|36|97|false|1|1|Emergency Department
+11|Jason|55|98|false|4|4|Surgery Department
+12|Edward|77|99|false|4|4|Surgery Department
+13|Nathan|39|96|true|4|4|Surgery Department
+14|Larry|24|96|false|5|5|POST-OP Department
+
+4. SELECT patient.name, departments.name FROM patient JOIN departments ON patient.department_id = departments.id;
+Carl|Pediatrics
+Ben|Pediatrics
+George|Pediatrics
+Hubert|Pediatrics
+Chris|Intensive Critical Unit
+Leon|Intensive Critical Unit
+Benny|Intensive Critical Unit
+Brandon|Emergency Department
+Michael|Emergency Department
+Mac|Emergency Department
+Jason|Surgery Department
+Edward|Surgery Department
+Nathan|Surgery Department
+Larry|POST-OP Department
+
+5. DELETE FROM patient
+   ...> WHERE name = "Carl";
+
+Research on your own
+SELECT critical_condition
+   ...> FROM patient
+   ...> INNER JOIN departments
+   ...> ON patient.critical_condition = departments.name;
+^^NO OUTPUT :(
