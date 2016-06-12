@@ -58,3 +58,10 @@ get '/greatjob' do
   else "Good Job!"
   end
 end
+
+# A route that uses route parameters to add two numbers and respond with the result. The data types are tricky here -- when will the data need to be (or arrive as) a string?
+
+get  '/add/:int_1/:int_2' do
+  sum = params[:int_1].to_i + params[:int_2].to_i
+  "The sum is #{sum}"
+end
