@@ -46,8 +46,15 @@ get '/students/:id' do
 end
 
 #A /contact route that displays an address (you can make up the address).
-
 get '/contact' do
   "742 Evergreen Terrace<br>Springfield,USA"
+end
+# A /great_job route that can take a person's name as a query parameter (not a route parameter) and say "Good job, [person's name]!". If the query parameter is not present, the route simply says "Good job!"
 
+get '/greatjob' do
+  name = params[:name]
+  if name
+    "Good job, #{name}!"
+  else "Good Job!"
+  end
 end
